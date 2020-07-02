@@ -52,3 +52,42 @@ Here's a slightly more succinct solution using a conditional expression:
 
 print("Splitting", total_candies, "candy" if total_candies == 1 else "candies")
 
+
+#######
+#1#
+def wants_all_toppings(ketchup, mustard, onion):
+    """Return whether the customer wants "the works" (all 3 toppings)
+    """
+    return ketchup and mustard and onion
+
+#2#
+def onionless(ketchup, mustard, onion):
+    """Return whether the customer doesn't want onions.
+    """
+    return not onion
+
+#3#
+def wants_plain_hotdog(ketchup, mustard, onion):
+    """Return whether the customer wants a plain hot dog with no toppings.
+    """
+    return not ketchup and not mustard and not onion
+
+#4# 
+def exactly_one_souce(ketchup, mustard, onion):
+    """Return wheter the customer wants either ketchup or mustard, but not both.
+    (You may be familiar with this operation under the name "exclusive or")"""
+    return (ketchup and not mustard) or (mustard and not ketchup)
+
+#5#MINE SOLUTION
+def exactly_one_topping(ketchup, mustard, onion)
+    """Return whether the customer wants exactly one of the three available toppings
+    on their hot dog.
+    """
+    return (ketchup and not mustard and not onion) or (mustard and not ketchup and not onion) or (onion and not ketchup and not mustard)
+
+#5#SOLUTION B
+return (ketchup + mustard + onion) == 1
+
+#5#SOLUTION C
+return (int(ketchup) + int(mustard) + int(onion)) == 1
+

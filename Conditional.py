@@ -102,4 +102,15 @@ def should_hit(dealer_total, player_total, player_low_aces, player_high_aces):
     """
     return False
 
+
+#LISTS
+"""Return the second element of the given list. If the list has no second
+    element, return None.
+    """
+    (L)
+
+def select_second(L):
+    if len(L) < 2:
+        return None
+    return L[1]
     

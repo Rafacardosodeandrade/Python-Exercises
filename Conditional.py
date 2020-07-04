@@ -113,6 +113,7 @@ def select_second(L):
     if len(L) < 2:
         return None
     return L[1]
+
 # You are analyzing sports teams. Members of each team are stored in a list. 
 # The Coach is the first name in the list, the captain is the second name in
 # the list, and other players are listed after that. These lists are stored 
@@ -125,3 +126,21 @@ def select_second(L):
     """
 def losing_team_captain(teams):
     return teams[-1][1]    
+
+#LOOPS AND LIST COMPREHENSIONS
+#DEBUGGING
+
+def has_lucky_number(nums):
+    """Return whether the given list of numbers is lucky. A lucky list contains
+    at least one number divisible by 7.
+    """
+    for num in nums:
+        if num % 7 == 0:
+            return True
+        else:
+            return False
+
+#SOLUTION
+def has_lucky_number(nums):
+    return any([num % 7 == 0 for num in nums])
+    

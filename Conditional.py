@@ -181,4 +181,7 @@ def menu_is_boring(meals):
         if meals[i] == meals[i+1]:
             return True
     return False
-            
+
+play_slot_machine()
+
+

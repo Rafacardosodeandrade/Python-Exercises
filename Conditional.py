@@ -182,6 +182,5 @@ def menu_is_boring(meals):
             return True
     return False
 
-play_slot_machine()
-
+#STRING AND DICTIONARY
 

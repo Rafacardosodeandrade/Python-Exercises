@@ -183,4 +183,14 @@ def menu_is_boring(meals):
     return False
 
 #STRING AND DICTIONARY
+# There is a saying that "Data scientists spend 80% of their time cleaning data, 
+# and 20% of their time complaining about cleaning data." Let's see if you can
+# write a function to help clean US zip code data. Given a string, it should 
+# return whether or not that string represents a valid zip code. 
+# For our purposes, a valid zip code is any string consisting of exactly 5 digits.
 
+# HINT: str has a method that will be useful here. Use help(str) to review a list 
+# of string methods
+
+def is_valid_zip(zip_code):
+    return len(zip_str) == 5 and zip_str.isdigit()

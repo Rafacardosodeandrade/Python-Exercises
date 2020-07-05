@@ -193,4 +193,4 @@ def menu_is_boring(meals):
 # of string methods
 
 def is_valid_zip(zip_code):
-    return len(zip_str) == 5 and zip_str.isdigit()
+    return len(zip_code) == 5 and zip_code.isdigit()

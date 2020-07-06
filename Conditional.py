@@ -228,3 +228,16 @@ def word_search(doc_list, keyword):
             indices.append(i)
     return indices
 
+# Now the researcher wants to supply multiple keywords to search for. 
+# Complete the function below to help her.
+# (You're encouraged to use the word_search function you just wrote when 
+# implementing this function. Reusing code in this way makes your programs 
+# more robust and readable - and it saves typing!)
+#
+def multi_word_search (doc_list, keywords):
+    keyword_to_indices = {}
+    for keyword in keywords:
+        keyword_to_indices[keyword] = word_search(doc_list, keyword)
+    return keyword_to_indices
+
+

@@ -274,7 +274,8 @@ def prettify_graph(graph):
     as dollar amounts using the "$" symbol.)
     """
     graph.set_title("Result of 500 slot machine pulls")
-        
+    # Make the y-axis begin at 0
+    graph.set_ylim(bottom=0)    
 
 
 

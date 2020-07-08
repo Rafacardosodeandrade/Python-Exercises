@@ -283,6 +283,9 @@ def prettify_graph(graph):
     ticks = graph.get_yticks()
     # Format those values into strings beginning with dollar sign
     new_labels = ['${}'.format(int(amt)) for amt in ticks]
+    # Set the new labels
+    graph.set_yticklabels(new_labels)
+    
        
 
 

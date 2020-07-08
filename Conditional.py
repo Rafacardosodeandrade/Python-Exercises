@@ -240,4 +240,19 @@ def multi_word_search (doc_list, keywords):
         keyword_to_indices[keyword] = word_search(doc_list, keyword)
     return keyword_to_indices
 
+# WORKING WITH EXTERNAL LIBRARIES
+# After completing the exercises on lists and tuples, Jimmy noticed that, 
+# according to his estimate_average_slot_payout function, the slot machines 
+# at the Learn Python Casino are actually rigged against the house, 
+# and are profitable to play in the long run.
 
+# Starting with $200 in his pocket, Jimmy has played the slots 500 times, 
+# recording his new balance in a list after each spin. He used Python's 
+# matplotlib library to make a graph of his balance over time:
+
+# CODE
+# Import the jimmy_slots submodule
+from learntools.python import jimmy_slots
+# Call the get_graph() function to get Jmmy's graph
+graph = jimmy_slots.get_graph()
+graph

@@ -7,3 +7,9 @@ iowa_file_path = '.../input/home-data-for-ml-course/train.csv'
 # Fill in the line below to read the file into a variable home_data
 home_data = pd.read_csv(iowa_file_path)
 
+# Step 2: Review The Data
+# Use the command you learned to view summary statistics of the data.
+# Then fill in variables to answer the following questions
+
+# Print summary statistics in next line
+home_data.describe()

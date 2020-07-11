@@ -13,3 +13,10 @@ home_data = pd.read_csv(iowa_file_path)
 
 # Print summary statistics in next line
 home_data.describe()
+# OUTPUT - DATAFRAME
+
+# What is the average lot size (rounded to nearest integer)?
+avg_lot_size = round(home_data['LotArea'].mean())
+
+
+

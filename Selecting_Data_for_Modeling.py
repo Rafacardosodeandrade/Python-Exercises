@@ -1,4 +1,4 @@
-# This is a exemplo made by Kaggle.com - it's very important to show step by step how Select Data for Modeling.
+# This is a example made by Kaggle.com - it's very important to show step by step how Select Data for Modeling.
 # 
 # SELECTING DATA FOR MODELING
 # Your dataset had too many variables to wrap your head around, or even to print out nicely. 
@@ -10,7 +10,7 @@
 # the name of DATAFRAME is melbourne
 import pandas as pd 
 
-melbourne_file_path = '../input/melbourne-housing-snapshot/melb_data.csv' #bring data
+melbourne_file_path = '../input/melbourne-housing-snapshot/melb_data.csv' #bring dataframe
 melbourne_data = pd.read_csv(melbourne_file_path) #reading data
 melbourne_data.columns #reading columns titles
 
@@ -35,4 +35,22 @@ melbourne_data = melbourne_data.dropna(axis=0)
 # We'll use the dot notation to select the column we want to predict, which is called the prediction target.
 # By convention, the prediction target is called y. So the code we need to save the house prices in the Melbourne data is
 y = melbourne_data.Price 
+
+# Choosing "Features"
+# The columns that are inputted into our model (and later used to make predictions) are called "features." 
+# In our case, those would be the columns used to determine the home price. Sometimes, you will use all columns except 
+# the target as features. Other times you'll be better off with fewer features.
+# For now, we'll build a model with only a few features. Later on you'll see how to iterate and compare models built with different features.
+# We select multiple features by providing a list of column names inside brackets. 
+# Each item in that list should be a string (with quotes).
+
+# Here is an example:
+melbourne_features = ['Rooms', 'Bathroom', 'Landsize', 'Lattitude', 'Longtitude']
+
+# By convention, this data is called X.
+X = melbourne_data[melbourne_features]
+
+
+
+
 

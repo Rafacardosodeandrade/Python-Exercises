@@ -95,6 +95,20 @@ from sklear.tree import DecisionTreeRegressor
 # For model reproducibility, set a numeric value for random_state when specifying the model
 iowa_model = DecisionTreeRegressor(random_state=1)
 iowa_model.fit(X,y)
+#
+# Step 4: Make Predictions
+# Make predictions with the model's predict command using X as the data.
+# Save the results to a variable called predictions.
+predictions = iowa_model.predict(X)
+print(predictions)
+#OUTPUT
+[208500. 181500. 223500. ... 266500. 142125. 147500.]
+
+
+
+
+
+
 
 
 

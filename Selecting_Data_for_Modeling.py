@@ -71,5 +71,13 @@ min	1.000000    	1.000000	      0.000000	      -38.164920	      144.542370
 75%	4.000000	      2.000000	      628.000000	      -37.758200	      145.052700
 max	8.000000	      8.000000	      37000.000000	-37.457090	      145.526350
 
-X.head() # OUTPUT is a table in Jupyter Notebook
+X.head()    # OUTPUT is a table in Jupyter Notebook that show just the five first 
+            # 5 rows records into dataframe.
+
+      Rooms	Bathroom	Landsize	Lattitude	Longtitude
+1	2	1.0	      156.0	      -37.8079	144.9934
+2	3	2.0	      134.0	      -37.8093	144.9944
+4	4	1.0	      120.0	      -37.8072	144.9941
+6	3	2.0	      245.0	      -37.8024	144.9993
+7	2	1.0	      256.0	      -37.8060	144.9954
 

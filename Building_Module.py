@@ -54,5 +54,7 @@ Making predictions for the following 5 houses:
 The predictions are
 [1035000. 1465000. 1600000. 1876000. 1636000.]
 
+# DONE 
+
 
 

@@ -75,3 +75,30 @@ y = home_data['SalePrice']
 feature_names = ['LotArea','YearBuilt','1stFlrSF', '2ndFlrSF', 'FullBath','BedroomAbvGr','TotRmsAbcGrd']
 # Select data corresponding to features in feature_names
 X = home_data[feature_names]
+
+# Review Data
+#
+# Before building a model, take a quick look at X to verify it looks sensible
+#
+# Review Data
+# Print description or satatistics from X
+X.describe()
+# Print the top few lines
+X.head()
+#
+# Step 3: Specify and Fit Model
+# Create a DecisionTreeRegressor and save it iowa_model. 
+# Ensure you've done the relevant import from sklearn to run this command.
+#
+# Then fit the model you just created using the data in X and y that you saved above.
+from sklear.tree import DecisionTreeRegressor
+# For model reproducibility, set a numeric value for random_state when specifying the model
+iowa_model = DecisionTreeRegressor(random_state=1)
+iowa_model.fit(X,y)
+
+
+
+
+
+
+

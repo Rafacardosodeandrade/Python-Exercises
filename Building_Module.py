@@ -15,8 +15,17 @@ from sklearn.tree import DecisionTreeRegressor
 
 # Define model.
 # Specify a number for random_state to ensure same results each run
-melbourne_model = DecisionTreeRegressor(random_state=1) #  exposes a number of methods 
-# for generating random numbers drawn from a variety of probability distributions.
+melbourne_model = DecisionTreeRegressor(random_state=1)  # exposes a number of methods for generating random numbers drawn from a variety of probability distributions.
+
+# Fit model
+melbourne_model.fit(X, y)
+# OUTPUT - File originally made in Jupyter Notebook
+DecisionTreeRegressor(criterion='mse', max_depth=None, max_features=None,
+                      max_leaf_nodes=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      presort=False, random_state=1, splitter='best')
+
 
 
 

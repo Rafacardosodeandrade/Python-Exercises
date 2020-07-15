@@ -175,6 +175,28 @@ mean_absolute_error(y, predicted_home_prices)
 # data from the model-building process, and then use those to test the model's accuracy on data it
 #  hasn't seen before. This data is called validation data.
 #
+#
+#
+# Coding It
+# The scikit-learn library has a function train_test_split to break up the data into two pieces. 
+# We'll use some of that data as training data to fit the model, and we'll use the other data as
+# validation data to calculate mean_absolute_error.
+#
+# Here is the code:
+from sklearn.model_selection import train_test_split
+
+# split data into training and validation data, for both features and target
+# The split is based on a random number generator. Supplying a numeric value to
+# the random_state argument guarantees we get the same split every time we run this script:
+train_X, val_X, train_y, val_y = train_test_split(X, y, random_state = 0)
+# Define model
+melbourne_model = DecisionTreeRegressor()
+# Fit model
+melbourne_model.fit(train_X, train_y)
+
+# get predicted prices on validation data
+val_predictions = melbourne_model.predict(val_X)
+print(mean_ansolute_error(val_y, val_predictions))
 
 
 

@@ -198,6 +198,16 @@ melbourne_model.fit(train_X, train_y)
 val_predictions = melbourne_model.predict(val_X)
 print(mean_ansolute_error(val_y, val_predictions))
 
+#OUTPUT
+260991.8108457069
+
+# Your mean absolute error for the in-sample data was about 500 dollars. Out-of-sample
+# it is more than 250,000 dollars.
+#
+# This is the difference between a model that is almost exactly right, and one that is unusable
+# for most practical purposes. As a point of reference, the average home value in the validation
+# data is 1.1 million dollars. So the error in new data is about a quarter of the average home value.
+
 
 
 

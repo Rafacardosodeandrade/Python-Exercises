@@ -156,6 +156,30 @@ mean_absolute_error(y, predicted_home_prices)
 # OUTPUT
 434.71594577146544
 
+# The Problem with "In-Sample" Scores
+# The measure we just computed can be called an "in-sample" score. We used a single "sample" of
+# houses for both building the model and evaluating it. Here's why this is bad.
+# 
+# Imagine that, in the large real estate market, door color is unrelated to home price.
+# However, in the sample of data you used to build the model, all homes with green doors 
+# were very expensive. The model's job is to find patterns that predict home prices, so it will
+# see this pattern, and it will always predict high prices for homes with green doors.
+#
+# Since this pattern was derived from the training data, the model will appear accurate in the training data.
+#
+# But if this pattern doesn't hold when the model sees new data, the model would be very 
+# inaccurate when used in practice.
+#
+# Since models' practical value come from making predictions on new data, we measure performance on 
+# data that wasn't used to build the model. The most straightforward way to do this is to exclude some 
+# data from the model-building process, and then use those to test the model's accuracy on data it
+#  hasn't seen before. This data is called validation data.
+#
+
+
+
+
+
 
 
 

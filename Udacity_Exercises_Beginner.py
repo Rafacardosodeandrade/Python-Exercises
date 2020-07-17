@@ -12,4 +12,29 @@ for stock_ticker, Stock_limit_price in buy_prices.items():
         buy_stock(ticker)
     else:
         watchlist_stock(ticker)
-        
+
+# Choice B
+prices = {'LUX': 62.48, 'AAPL': 127.67, 'NVDA': 161,24}
+for ticker, price in prices.items():
+    if price <= current_price(ticker):
+        buy(ticker)
+    else:
+        watchlist(ticker)
+
+# Choice C
+limit_prices = {'LUX': 62.48, 'AAPL': 127.67, 'NVDA': 161,24}
+for ticker, limit in limit.prices.item():
+    if limit <= get_current_price(ticker):
+        buy(ticker)
+    else:
+        watchlist(ticker)
+
+
+# THE BEST CODE ##############################################
+# Choice C
+limit_prices = {'LUX': 62.48, 'AAPL': 127.67, 'NVDA': 161,24}
+for ticker, limit in limit.prices.item():
+    if limit <= get_current_price(ticker):
+        buy(ticker)
+    else:
+        watchlist(ticker)

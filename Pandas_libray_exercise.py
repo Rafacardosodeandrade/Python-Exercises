@@ -11,3 +11,17 @@ new_df = df.rename(columns)={'fixed acidity': 'fixed_acidity',
                              'total sulfur dioxide': 'total_sulfur_dioxide'
                             })
 new_df.head()
+
+#   And here's a slightly better way you could do it. You can avoid making naming errors 
+#   due to typos caused by manual typing. However, this looks a little repetitive. Can you make it better?
+label = list(df.columns)
+labels[0] = labels[0].replace('', '_')
+labels[1] = labels[1].replace('', '_')
+labels[2] = labels[2].replace('', '_')
+labels[3] = labels[3].replace('', '_')
+labels[4] = labels[4].replace('', '_')
+labels[5] = labels[5].replace('', '_')
+labels[6] = labels[6].replace('', '_')
+df.columns = labels
+
+df.head()

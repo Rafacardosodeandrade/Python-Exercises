@@ -24,8 +24,13 @@ labels[4] = labels[4].replace('', '_')
 labels[5] = labels[5].replace('', '_')
 labels[6] = labels[6].replace('', '_')
 df.columns = labels
-
 df.head()
+
+#THE BEST MODE
+df.colums = [label.replace(' ', '_') for label in df.columns]
+df.head()
+
+
 
 # Analyzing Features
 # Now that your columns are ready, you want to see how different features of this dataset 
@@ -83,3 +88,17 @@ citric_acid
 high    5.822360
 low     5.447103
 Name: quality, dtype: float64
+
+#BEST METHOD
+
+def numeric_for_busckets(df, column_name):
+    median = df[column_name].median()
+    for i, val in enumerate(df[column_name]):
+        if val >= median:
+            df.loc[i, column_name] = 'high'
+        else:
+            df.loc[i, column_name] = 'low'
+
+for feature in df.columns[:-1]:
+    numeric_for_busckets(df, feature)
+    print(df.groupby(feature).quality.mean(), '\n')

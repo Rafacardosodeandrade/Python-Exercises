@@ -44,3 +44,42 @@ alcohol
 high    5.958904
 low     5.310302
 Name: quality, dtype: float64
+
+median_pH = df.pH.median()
+for i, pH in enumerate(df.pH):
+    if pH >= median_pH:
+        df.loc[i, 'pH'] = 'high'
+    else:
+        df.loc[i, 'pH'] = 'low'
+df.groupby('pH').quality.mean()
+#OUTPUT
+pH
+high    5.598039
+low     5.675607
+Name: quality, dtype: float64
+
+median_sugar = df.residual_sugar.median()
+for i, sugar in enumerate(df.residual_sugar):
+    if sugar >= median_sugar:
+        df.loc[i, 'residual_sugar'] = 'high'
+    else:
+        df.loc[i, 'residual_sugar'] = 'low'
+df.groupby('residual_sugar').quality.mean()
+#OUTPUT
+residual_sugar
+high    5.665880
+low     5.602394
+Name: quality, dtype: float64
+
+median_citric_acid = df.citric_acid.median()
+for i, citric_acid in enumerate(df.citric_acid):
+    if citric_acid >= median_citric_acid:
+        df.loc[i, 'citric_acid'] = 'high'
+    else:
+        df.loc[i, 'citric_acid'] = 'low'
+df.groupby('citric_acid').quality.mean()
+#OUTPUT
+citric_acid
+high    5.822360
+low     5.447103
+Name: quality, dtype: float64

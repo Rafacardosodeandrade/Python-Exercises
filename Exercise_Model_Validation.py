@@ -59,6 +59,16 @@ iowa_model.fit(train_X, train_y)
 #### Make Predictions with Validation data
 val_predictions = iowa_model.predict(val_X) # Predict with all validation observations
 
+# Step 4: Calculate the Mean Absolute Error in Validation Data
+
+from sklear.metrics import mean_absolute_error
+val_mae = mean_absolute_error(val_predictions, val_y)
+
+#   uncomment following line to see the validation_mae
+
+print(val_mae)
+
+
 
 
 

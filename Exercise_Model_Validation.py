@@ -54,7 +54,11 @@ iowa_model.fit(train_X, train_y)
  262000.]
 [186500. 184000. 130000.  92000. 164500. 220000. 335000. 144152. 215000.
  262000.]
- 
+#
+# # STEP 3
+#### Make Predictions with Validation data
+val_predictions = iowa_model.predict(val_X) # Predict with all validation observations
+
 
 
 

@@ -27,4 +27,7 @@ iowa_model.fit(train_X, train_y)
 val_predictions = iowa_model_predict(val_X)
 val_mae = mean_absolute_error(val_predictions, val_y)
 print("Validation MAE: {:,.0f}".format(val_mae))
+#OUTPUT
+Validation MAE: 29,653
+
 

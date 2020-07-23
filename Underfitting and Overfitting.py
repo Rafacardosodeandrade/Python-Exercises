@@ -69,3 +69,18 @@ Max leaf nodes: 500  		 Mean Absolute Error:  29454
  100 27282.50803885739
  
 
+
+###### Step 2: Fit Model Using All Data
+# You know the best tree size. If you were going to deploy this model in practice, 
+# you would make it even more accurate by using all of the data and keeping that tree size.
+# That is, you don't need to hold out the validation data now that you've made all your 
+# modeling decisions.
+# # # 
+
+# argument to make optimal size and uncomment
+final_model = DecisionTreeRegressor(max_leaf_nodes=best_tree_size, random_state=1)
+
+# fit the final model and uncomment the next two lines
+final_model.fit(X, y)
+
+

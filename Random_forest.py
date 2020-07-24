@@ -2,5 +2,5 @@
 # scikit-learn - this time using the RandomForestRegressor class instead of DecisionTreeRegressor.
 
 from sklearn.ensemble import RandomForestRegressor
-
+from sklearn.metrics import mean_absolute_error
 

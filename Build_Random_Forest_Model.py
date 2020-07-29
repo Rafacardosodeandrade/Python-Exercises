@@ -19,6 +19,7 @@ test_data = pd.read_csv(test_data_path)
 # The list of columns is stored in a variable called features
 test_X = test_data[features]
 
+
 # make predictions which we will submit.
 test_preds = rf_model_on_full_data.predict(test_X)
 

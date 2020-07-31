@@ -40,5 +40,15 @@ pd.set_option('max_rows', 5)
 animals = pd.DataFrame({'Cows': [12, 20], 'Goats': [22, 19]}, index=['Year 1', 'Year 2'])
 print(animals)
 
+In the cell below, write code to save this DataFrame to disk as a csv file with the name cows_and_goats.csv.
+
+animals.to_csv("cows_and_goats.csv")
+
+
+
+
+
+
+
 
 

@@ -17,7 +17,7 @@ print(fruits)
 fruit_sales = pd.DataFrame([[35, 21],[41, 34]], columns=['Apples','Bananas'], index=['2017 Sales', '2018 Sales'])
 print(fruit_sales)
 
-# Create a variable ingredients with a Series that looks like:
+# 3. Create a variable ingredients with a Series that looks like:
 #
 # Flour     4 cups
 # Milk       1 cup
@@ -30,4 +30,10 @@ items = ['Flour', 'Milk', 'Eggs', 'Spam']
 recipe = pd.Series(quantities, index=items, name='Dinner')
 ingredients = recipe
 print(ingredients)
+
+# 4.Read the following csv dataset of wine reviews into a DataFrame called reviews:
+# The filepath to the csv file is ../input/wine-reviews/winemag-data_first150k.csv. The first few lines look like:
+
+reviews = pd.read_csv('../input/wine-reviews/winemag-data_first150k.csv', index_col=0)
+
 

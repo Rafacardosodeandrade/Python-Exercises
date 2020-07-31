@@ -29,11 +29,16 @@ quantities = ['4 cups', '1 cup','2 large', '1 can']
 items = ['Flour', 'Milk', 'Eggs', 'Spam']
 recipe = pd.Series(quantities, index=items, name='Dinner')
 ingredients = recipe
-print(ingredients)
+#print(ingredients)
 
 # 4.Read the following csv dataset of wine reviews into a DataFrame called reviews:
 # The filepath to the csv file is ../input/wine-reviews/winemag-data_first150k.csv. The first few lines look like:
 
 reviews = pd.read_csv('../input/wine-reviews/winemag-data_first150k.csv', index_col=0)
+
+# 5. Run the cell below to create and display a DataFrame called `animals`:
+animals = pd.DataFrame({'Cows':[12, 20], 'Goats':[22, 19]}, index=['Year 1', 'Year 2'])
+print(animals)
+
 
 

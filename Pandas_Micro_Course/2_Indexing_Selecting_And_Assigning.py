@@ -19,5 +19,10 @@ first_row = reviews.iloc[0]
 # Hint: format your output as a pandas Series.
 first_description = reviews.description[:10]
 
+# 5 Select the records with index labels 1, 2, 3, 5, and 8, assigning the result to the variable sample_reviews.
+# In other words, generate the following DataFrame:
+indices = [1, 2, 3, 5, 8]
+sample_reviews= reviews.loc[indices]
+
 
 

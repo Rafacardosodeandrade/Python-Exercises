@@ -7,5 +7,10 @@ reviews.head()
 
 # EXERCISES
 # 1. Select the `description` column from `reviews` and assign the result to the variable `desc`.
-
 desc = reviews['description']
+
+# 2. Select the first value from the description column of reviews, assigning it to variable first_description.
+first_description = reviews.description[0]
+
+# 3. Select the first row of data (the first record) from reviews, assigning it to the variable first_row.
+

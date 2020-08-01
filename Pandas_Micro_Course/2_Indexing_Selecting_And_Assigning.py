@@ -24,5 +24,12 @@ first_description = reviews.description[:10]
 indices = [1, 2, 3, 5, 8]
 sample_reviews= reviews.loc[indices]
 
+# 6 Create a variable df containing the country, province, region_1, and region_2 columns 
+# of the records with the index labels 0, 1, 10, and 100. In other words, generate the following DataFrame:
+columns = ['country','province','region_1','region_2']
+indices = [0,1,10,100]
+df = reviews.loc[indices,columns]
+
+
 
 

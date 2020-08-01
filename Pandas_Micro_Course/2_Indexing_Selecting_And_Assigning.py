@@ -13,4 +13,7 @@ desc = reviews['description']
 first_description = reviews.description[0]
 
 # 3. Select the first row of data (the first record) from reviews, assigning it to the variable first_row.
+first_row = reviews.iloc[0]
+
+
 

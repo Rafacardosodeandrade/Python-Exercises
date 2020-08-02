@@ -33,7 +33,10 @@ df = reviews.loc[indices,columns]
 # 7 Create a variable df containing the country and variety columns of the first 100 records.
 colums = ['country', 'variety']
 df = reviews.loc[:99, columns]
-print(df)
+
+# 8 Create a DataFrame italian_wines containing reviews of wines made in Italy.
+# Hint: reviews.country equals what?
+italian_wines = reviews[reviews.country == 'Italy']
 
 
 

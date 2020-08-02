@@ -30,6 +30,11 @@ columns = ['country','province','region_1','region_2']
 indices = [0,1,10,100]
 df = reviews.loc[indices,columns]
 
+# 7 Create a variable df containing the country and variety columns of the first 100 records.
+colums = ['country', 'variety']
+df = reviews.loc[:99, columns]
+print(df)
+
 
 
 

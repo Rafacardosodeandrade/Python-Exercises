@@ -19,4 +19,4 @@ reviews_per_country = reviews.country.value_count()
 print(reviews_per_country)
 
 # 4 Create variable centered_price containing a version of the price column with the mean price subtracted.
-centered_price = reviews.price
+centered_price = reviews.price - reviews.price.mean()

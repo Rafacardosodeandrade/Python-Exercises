@@ -27,6 +27,21 @@ print(centered_price)
 bargain_idx = (reviews.points / reviews.price).idxmax
 bargain_wine = reviews.loc[bargain_idx, 'title']
 
+# 6 There are only so many words you can use when describing a bottle of wine.
+# Is a wine more likely to be "tropical" or "fruity"? 
+# Create a Series descriptor_counts counting how many times each of these two words appears in 
+# the description column in the dataset.
+
+n_trop = reviews.description.map(lambda desc: "tropical" in desc).sum()
+n_fruity = reviews.description.map(lambda desc: "fruity" in desc).sum()
+descriptor_counts = pd.Series([n_trop, n_fruity], index=['tropical', 'fruity'])
+print(descriptor_counts)
+
+
+
+
+
+
 
 
 

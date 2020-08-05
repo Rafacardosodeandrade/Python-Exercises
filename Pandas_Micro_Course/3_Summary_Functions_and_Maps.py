@@ -10,3 +10,7 @@ median_points = reviews.points.median()
 
 # 2 What countries are represented in the dataset? (Your answer should not include any duplicates.)
 countries = reviews.countries.unique()
+
+# 3 How often does each country appear in the dataset? 
+# Create a Series reviews_per_country mapping countries to the count of reviews of wines from that country.
+reviews_per_country = reviews.country.value_count()

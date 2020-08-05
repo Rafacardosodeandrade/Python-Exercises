@@ -22,3 +22,16 @@ print(reviews_per_country)
 centered_price = reviews.price - reviews.price.mean()
 print(centered_price)
 
+# 5 I'm an economical wine buyer. Which wine is the "best bargain"? Create a variable bargain_wine
+# with the title of the wine with the highest points-to-price ratio in the dataset.
+bargain_idx = (reviews.points / reviews.price).idxmax
+bargain_wine = reviews.loc[bargain_idx, 'title']
+
+
+
+
+
+
+
+
+

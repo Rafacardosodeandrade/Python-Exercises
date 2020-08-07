@@ -22,4 +22,11 @@ plt.plot(3,2,'o')
 ax = plt.gca()
 ax.axis([0,6,0,10]) # here we use 4 parameters
 
+# another example with multi points.
+plt.figure()
+plt.plot(1.5,1.5,'o')
+plt.plot(2,2,'o')
+plt.plot(2.5,2.5.'o')
+
+
 

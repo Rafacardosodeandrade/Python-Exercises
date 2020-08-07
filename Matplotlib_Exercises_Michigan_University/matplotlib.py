@@ -6,3 +6,13 @@ mpl.get_backend()
 #backend use
 from matplotlib.backends,backend_agg import FigureCanvasAgg
 from matplotlib.figure import Figure
+
+fig = Figure()
+canvas = FigureCanvasAgg(fig)
+
+ax = fig.ass_subplot(111)
+ax.plot(3,2,'.')
+canvas.print_png('test.png')
+%%html 
+< img src = 'test.png' />
+

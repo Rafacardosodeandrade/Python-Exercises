@@ -16,3 +16,10 @@ canvas.print_png('test.png')
 %%html 
 < img src = 'test.png' />
 
+# another example
+plt.figure()
+plt.plot(3,2,'o')
+ax = plt.gca()
+ax.axis([0,6,0,10]) # here we use 4 parameters
+
+

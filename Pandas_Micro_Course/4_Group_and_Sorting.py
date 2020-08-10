@@ -9,6 +9,7 @@ reviews_written = reviews.groupby('taster_twitter_handle').taster_twitter_handle
 # that much was given in a review. Sort the values by price, ascending (so that 4.0 dollars 
 # is at the top and 3300.0 dollars is at the bottom).
 
+best_rating_per_price = reviews.groupby('price')['points'].max().sort_index()
 
 
 

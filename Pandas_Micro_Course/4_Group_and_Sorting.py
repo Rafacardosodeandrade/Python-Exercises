@@ -22,6 +22,11 @@ price_extremes = reviews.groupby('variety').price.agg([min, max])
 
 sorted_varieties = price_extremes.sort_values(by=['min', 'max'], ascending=False)
 
+# 5. Create a `Series` whose index is reviewers and whose values is the average review score given out 
+# by that reviewer. Hint: you will need the `taster_name` and `points` columns.
+
+reviewer_mean_ratings = reviews.groupby('taster_name').points.mean()
+
 
 
 

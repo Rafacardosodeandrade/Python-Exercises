@@ -16,7 +16,18 @@ best_rating_per_price = reviews.groupby('price')['points'].max().sort_index()
 
 price_extremes = reviews.groupby('variety').price.agg([min, max])
 
-print(test)
+# 4. What are the most expensive wine varieties? Create a variable sorted_varieties 
+# containing a copy of the dataframe from the previous question where varieties are sorted
+# in descending order based on minimum price, then on maximum price (to break ties).
+
+sorted_varieties = price_extremes.sort_values(by=['min', 'max'], ascending=False)
+
+
+
+
+
+
+
 
 
 

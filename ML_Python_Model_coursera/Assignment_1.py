@@ -34,5 +34,6 @@ def answer_one():
 
 def answer_two():
     cancerdf = answer_one()
-    Distribution=
+    Distribution=pd.Series([len(cancerdf[cancerdf['target']==0]),len(cancerdf[cancerdf['target']==1])],name='target',index=['malignant','benign'])
+    return Distribution
 

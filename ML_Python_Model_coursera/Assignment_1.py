@@ -37,3 +37,10 @@ def answer_two():
     Distribution=pd.Series([len(cancerdf[cancerdf['target']==0]),len(cancerdf[cancerdf['target']==1])],name='target',index=['malignant','benign'])
     return Distribution
 
+# Question 3
+# Split the DataFrame into X (the data) and y (the labels).
+
+# This function should return a tuple of length 2: (X, y), where
+
+# X, a pandas DataFrame, has shape (569, 30)
+# y, a pandas Series, has shape (569,).

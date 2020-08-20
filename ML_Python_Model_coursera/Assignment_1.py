@@ -21,3 +21,8 @@
 
 # RangeIndex(start=0, stop=569, step=1)
 
+def answer_one():
+    df=pd.DataFrame(cancer.data, columns=cancer.feature_names)
+    df['target']=cancer.target
+    return df
+

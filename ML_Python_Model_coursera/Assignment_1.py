@@ -44,3 +44,13 @@ def answer_two():
 
 # X, a pandas DataFrame, has shape (569, 30)
 # y, a pandas Series, has shape (569,).
+
+def answer_three()
+    cancerdf = answer_one()
+    X=cancerdf[cancer['feature_names']]
+    y=cancerdf['target']
+
+    return X, y
+
+answer_three()
+

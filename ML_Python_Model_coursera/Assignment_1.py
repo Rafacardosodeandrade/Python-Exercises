@@ -68,3 +68,27 @@ X_train has shape (426, 30)
 X_test has shape (143, 30)
 y_train has shape (426,)
 y_test has shape (143,)
+
+from sklearn.model_selection import train_test_split
+
+def answer_four():
+    X,y=answer_three()
+
+    X_train,X_test,y_train,y_test=train_test_split(X,y,random_state=0)
+
+    return X_train,X_test,y_train,y_test
+
+answer_four()
+
+# 5. Using KNeighborsClassifier, fit a k-nearest neighbors (knn) classifier with X_train, 
+# y_train and using one nearest neighbor (n_neighbors = 1).
+
+# This function should return a sklearn.neighbors.classification.KNeighborsClassifier.
+
+from sklearn.neighbors import KNeighborsClassifier
+
+def answer_five():
+    X_train, X_test, y_train, y_test = answer_four()
+
+    
+

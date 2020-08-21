@@ -102,6 +102,15 @@ answer_five()
 # (necessary for the precict method of KNeighborsClassifier).
 
 # This function should return a numpy array either array([ 0.]) or array([ 1.])
+def answer_six():
+    cancerdf=answer_one()
+    means=cancerdf.mean()[:-1].values.reshape(1,-1)
+
+    knn=answer_five()
+    answer=knn.predict(means)
+
+    return answer
+answer_six()
 
 
 

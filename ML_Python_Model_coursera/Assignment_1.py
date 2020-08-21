@@ -112,7 +112,10 @@ def answer_six():
     return answer
 answer_six()
 
-#7.
+# 7.Using your knn classifier, predict the class labels for the test set X_test.
+# This function should return a numpy array with shape (143,) and values either 0.0 or 1.0.
+
+
 
 
 

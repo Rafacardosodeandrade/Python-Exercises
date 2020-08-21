@@ -89,7 +89,11 @@ from sklearn.neighbors import KNeighborsClassifier
 
 def answer_five():
     X_train, X_test, y_train, y_test = answer_four()
-    
 
+    knn=KNeighborsClassifier(n_neighbors=1)
+    knn.fit(X_train,y_train)
+
+    return knn
+answer_five()\
 
 

@@ -54,3 +54,17 @@ def answer_three()
 
 answer_three()
 
+# Question 4
+# Using train_test_split, split X and y into training and test sets (X_train, 
+# X_test, y_train, and y_test).
+
+# Set the random number generator state to 0 using random_state=0 to make sure 
+# your results match the autograder!
+
+# This function should return a tuple of length 4: (X_train, X_test, y_train, y_test)
+# , where
+
+X_train has shape (426, 30)
+X_test has shape (143, 30)
+y_train has shape (426,)
+y_test has shape (143,)

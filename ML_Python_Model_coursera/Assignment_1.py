@@ -123,6 +123,14 @@ def answer_seven():
     return ansTest
 answer_seven()
 
+# 8 Find the score (mean accuracy) of your knn classifier using X_test and y_test.
 
+# This function should return a float between 0 and 1
 
+def answer_eight():
+    X_train, X_test, y_train, y_test = answer_four()
+    knn=answer_five()
+
+    return meanAccuracy
+answer_eight()
 

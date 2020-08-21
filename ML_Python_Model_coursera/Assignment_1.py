@@ -94,6 +94,14 @@ def answer_five():
     knn.fit(X_train,y_train)
 
     return knn
-answer_five()\
+answer_five()
+
+# 6. Using your knn classifier, predict the class label using the mean value for each feature.
+# Hint: You can use cancerdf.mean()[:-1].values.reshape(1, -1) which gets the mean value for 
+# each feature, ignores the target column, and reshapes the data from 1 dimension to 2 
+# (necessary for the precict method of KNeighborsClassifier).
+
+# This function should return a numpy array either array([ 0.]) or array([ 1.])
+
 
 

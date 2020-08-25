@@ -17,3 +17,5 @@ renamed = reviews.rename(columns=dict(region_1='region', region_2='locale'))
 # 2. Set the index name in the dataset to wines.
 reindex = reviews.rename_axis('wines', axis='rows')
 
+
+

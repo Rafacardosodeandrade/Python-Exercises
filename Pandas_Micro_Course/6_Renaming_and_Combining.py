@@ -9,3 +9,8 @@ print("Setup complete.")
 Exercises
 # View the first several lines of your data by running the cell below:
 reviews.head()
+
+# 1. region_1 and region_2 are pretty uninformative names for locale columns in the dataset. 
+# Create a copy of reviews with these columns renamed to region and locale, respectively.
+renamed = reviews.rename(columns=dict(region_1='region', region_2='locale'))
+

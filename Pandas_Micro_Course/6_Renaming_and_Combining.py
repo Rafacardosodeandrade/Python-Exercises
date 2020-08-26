@@ -17,7 +17,7 @@ renamed = reviews.rename(columns=dict(region_1='region', region_2='locale'))
 # 2. Set the index name in the dataset to wines.
 reindex = reviews.rename_axis('wines', axis='rows')
 
-# The [Things on Reddit](https://www.kaggle.com/residentmario/things-on-reddit/data) dataset 
+# 3. The [Things on Reddit](https://www.kaggle.com/residentmario/things-on-reddit/data) dataset 
 # includes product links from a selection of top-ranked forums ("subreddits") on reddit.com. 
 # Run the cell below to load a dataframe of products mentioned on the */r/gaming* subreddit 
 # and another dataframe for products mentioned on the *r//movies* subreddit.
@@ -28,6 +28,16 @@ movie_products = pd.read_csv("../input/things-on-reddit/top-things/top-things/re
 movie_products['subreddit'] = "r/movies"
 
 # Create a `DataFrame` of products mentioned on *either* subreddit.
-
 combine_products = pd.concat([gaming_products, movie_products])
+
+# 4.4. The Powerlifting Database dataset on Kaggle includes one CSV table for powerlifting
+# meets and a separate one for powerlifting competitors. Run the cell below to load these 
+# datasets into dataframes:
+powerlifting_meets = pd.read_csv("../input/powerlifting-database/meets.csv")
+powerlifting_competitors = pd.read_csv("../input/powerlifting-database/openpowerlifting.csv")
+
+
+
+
+
 

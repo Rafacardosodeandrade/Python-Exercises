@@ -41,6 +41,20 @@ powerlifting_competitors = pd.read_csv("../input/powerlifting-database/openpower
 
 powerlifting_cobined = powerlifting_meets.set_index("MeetID").join(powerlifting_competitors.set_index("MeetID"))
 
+Congratulations!
+You've finished the Pandas micro-course. Many data scientists feel efficiency with Pandas is the most useful and practical skill they have, because it allows you to progress quickly in any project you have.
+
+If you'd like to apply your new skills to examining geospatial data, you're encouraged to check out our Geospatial Analysis micro-course.
+
+You can also take advantage of your Pandas skills by entering a Kaggle Competition or by answering a question you find interesting using Kaggle Datasets.
+
+
+
+
+
+
+
+
 
 
 

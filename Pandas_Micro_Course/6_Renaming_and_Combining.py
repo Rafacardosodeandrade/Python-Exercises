@@ -17,5 +17,12 @@ renamed = reviews.rename(columns=dict(region_1='region', region_2='locale'))
 # 2. Set the index name in the dataset to wines.
 reindex = reviews.rename_axis('wines', axis='rows')
 
+# The [Things on Reddit](https://www.kaggle.com/residentmario/things-on-reddit/data) dataset 
+# includes product links from a selection of top-ranked forums ("subreddits") on reddit.com. 
+# Run the cell below to load a dataframe of products mentioned on the */r/gaming* subreddit 
+# and another dataframe for products mentioned on the *r//movies* subreddit.
 
-
+gaming_products = pd.read_csv("../input/things-on-reddit/top-things/top-things/reddits/g/gaming.csv")
+gaming_products['subreddit'] = "r/gaming"
+movie_products = pd.read_csv("../input/things-on-reddit/top-things/top-things/reddits/m/movies.csv")
+movie_products['subreddit'] = "r/movies"

@@ -26,3 +26,8 @@ gaming_products = pd.read_csv("../input/things-on-reddit/top-things/top-things/r
 gaming_products['subreddit'] = "r/gaming"
 movie_products = pd.read_csv("../input/things-on-reddit/top-things/top-things/reddits/m/movies.csv")
 movie_products['subreddit'] = "r/movies"
+
+# Create a `DataFrame` of products mentioned on *either* subreddit.
+
+combine_products = pd.concat([gaming_products, movie_products])
+

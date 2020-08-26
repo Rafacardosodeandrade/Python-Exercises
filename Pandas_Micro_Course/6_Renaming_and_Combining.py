@@ -39,7 +39,7 @@ powerlifting_competitors = pd.read_csv("../input/powerlifting-database/openpower
 # Both tables include references to a MeetID, a unique key for each meet (competition) 
 # included in the database. Using this, generate a dataset combining the two tables into one.
 
-
+powerlifting_cobined = powerlifting_meets.set_index("MeetID").join(powerlifting_competitors.set_index("MeetID"))
 
 
 

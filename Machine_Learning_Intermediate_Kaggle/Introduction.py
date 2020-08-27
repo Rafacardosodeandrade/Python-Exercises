@@ -8,5 +8,7 @@
 #  please check out this short tutorial. To read about model validation, look here. 
 # Alternatively, if you'd prefer to look through a full course to review all of these topics, start here.)
 
+import pandas as pd
+from sklearn.model_selection import train_test_split
 
 

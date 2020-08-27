@@ -15,4 +15,10 @@ from sklearn.model_selection import train_test_split
 X_full = pd.read_csv('../input/train.csv', index_col='Id')
 X_test_full = pd.read_csv('../input/test.csv', index_col='Id')
 
+# Obtain target and predictors
+y = X_full.SalePrice
+features = ['LotArea', 'YearBuilt', '1stFlrSF', '2ndFlrSF', 'FullBath', 'BedroomAbvGr', 'TotRmsAbvGrd']
+X = X_full[features].copy()
+X_test = X_test_full[features].copy()
+
 

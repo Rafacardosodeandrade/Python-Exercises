@@ -25,4 +25,6 @@ X_test = X_test_full[features].copy()
 X_train, X_valid, y_train, y_valid = train_test_split(X, y, train_size=0.8, test_size=0.2,
                                                       random_state=0)
 
+# Use the next cell to print the first several rows of the data. It's a nice way to get an overview of 
+# the data you will use in your price prediction model.
 

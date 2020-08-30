@@ -30,3 +30,15 @@ X_train, X_valid, y_train, y_valid = train_test_split(X, y, train_size=0.8, test
 
 X_train.head()
 
+# Step 1: Evaluate several models
+# The next code cell defines five different random forest models. Run this code cell without changes.
+# (_To review random forests, look here._)
+
+
+
+
+
+
+
+
+

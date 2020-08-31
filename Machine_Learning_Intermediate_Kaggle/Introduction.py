@@ -35,10 +35,6 @@ X_train.head()
 # (_To review random forests, look here._)
 
 
-
-
-
-
-
+# STEP 2
 
 

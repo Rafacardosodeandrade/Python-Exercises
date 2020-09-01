@@ -34,7 +34,6 @@ X_train.head()
 # The next code cell defines five different random forest models. Run this code cell without changes.
 # (_To review random forests, look here._)
 
-
-# STEP 2
+#nocode
 
 

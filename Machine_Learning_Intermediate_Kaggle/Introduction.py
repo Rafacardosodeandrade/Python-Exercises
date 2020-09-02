@@ -34,6 +34,7 @@ X_train.head()
 # The next code cell defines five different random forest models. Run this code cell without changes.
 # (_To review random forests, look here._)
 
-#nocode
+from sklearn.ensemble import RandomForestRegressor
 
-
+# Define the models
+model_1 = RandomForestRegressor(n_estimators=50, random_state=0)

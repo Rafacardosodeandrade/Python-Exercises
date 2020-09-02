@@ -38,3 +38,7 @@ from sklearn.ensemble import RandomForestRegressor
 
 # Define the models
 model_1 = RandomForestRegressor(n_estimators=50, random_state=0)
+model_2 = RandomForestRegressor(n_estimators=100, random_state=0)
+
+
+

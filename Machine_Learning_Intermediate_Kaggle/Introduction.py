@@ -62,6 +62,19 @@ for i in range(0, len(models)):
     mae = score_model(model(models[i]))
     print("Model %d MAE: %d" % (i+1, mae))
 
+    # output
+    # Model 1 MAE: 24015
+    # Model 2 MAE: 23740
+    # Model 3 MAE: 23528
+    # Model 4 MAE: 23996
+    # Model 5 MAE: 23706
+
+
+
+
+
+
+
 
 
 

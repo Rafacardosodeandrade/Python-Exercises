@@ -46,4 +46,16 @@ model_5 = RandomForestRegressor(n_estimators=100, max_depth=7, random_state=0)
 models = [model_1, model_2, model_3, model_4, model_5]
 
 
+# To select the best model out of the five, we define a function score_model() below. 
+# This function returns the mean absolute error (MAE) from the validation set. 
+# Recall that the best model will obtain the lowest MAE. (To review mean absolute error, look here.)
+
+from sklearn.metrics import mean_absolute_error
+
+#Function for comparing different models
+
+
+
+
+
 

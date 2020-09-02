@@ -40,4 +40,4 @@ from sklearn.ensemble import RandomForestRegressor
 model_1 = RandomForestRegressor(n_estimators=50, random_state=0)
 model_2 = RandomForestRegressor(n_estimators=100, random_state=0)
 model_3 = RandomForestRegressor(n_estimators=100, criterion='mae', random_state=0)
-
+model_4 = RandomForestRegressor(n_estimators=200, min_samples_split=20, random_state=0)

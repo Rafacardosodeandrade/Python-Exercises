@@ -58,6 +58,9 @@ def score_model(model, X_t=X_train, X_v=X_valid, y_t=y_train, y_v=y_valid):
     preds = model.predict(X_v)
     return mean_absolute_error(y_v, preds)
 
+for i in range(0, len(models)):
+    mae = score_model(model(models[i]))
+    print("Model %d MAE: %d" % (i+1, mae))
 
 
 

@@ -76,6 +76,20 @@ for i in range(0, len(models)):
 best_model = model_3
 
 
+# Step 2: Generate test predictions 
+# Great. You know how to evaluate what makes an accurate model. Now it's time to go through
+# the modeling process and make predictions. In the line below, create a Random Forest model 
+# with the variable name my_model.
+
+
+
+
+
+
+
+
+
+
 
 
 

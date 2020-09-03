@@ -81,6 +81,8 @@ best_model = model_3
 # the modeling process and make predictions. In the line below, create a Random Forest model 
 # with the variable name my_model.
 
+# Define a model
+my_model = best_model # Your code here
 
 
 

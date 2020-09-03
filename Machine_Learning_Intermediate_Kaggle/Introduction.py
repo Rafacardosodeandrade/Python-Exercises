@@ -84,6 +84,18 @@ best_model = model_3
 # Define a model
 my_model = best_model # Your code here
 
+# Run the next code cell without changes. The code fits the model to the training and validation data, 
+# and then generates test predictions that are saved to a CSV file. These test predictions can be 
+# submitted directly to the competition!
+
+
+
+
+
+
+
+
+
 
 
 

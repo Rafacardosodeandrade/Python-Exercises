@@ -99,6 +99,22 @@ output = pd.DataFrame({'Id': X_test.index,
                        'SalePrice': preds_test})
 output.to_csv('submission.csv', index=False)
 
+# Now it's your turn to test your new knowledge of missing values handling. 
+# You'll probably find it makes a big difference.
+
+# Setup
+# The questions will give you feedback on your work. Run the following cell to set up the feedback system.
+
+# Set up code checking
+import os
+if not os.path.exists("../input/train.csv"):
+    os.symlink("../input/home-data-for-ml-course/train.csv", "../input/train.csv")  
+    os.symlink("../input/home-data-for-ml-course/test.csv", "../input/test.csv") 
+from learntools.core import binder
+binder.bind(globals())
+from learntools.ml_intermediate.ex2 import *
+print("Setup Complete")
+
 
 
 

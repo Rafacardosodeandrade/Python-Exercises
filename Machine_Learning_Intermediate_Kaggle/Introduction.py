@@ -115,6 +115,12 @@ binder.bind(globals())
 from learntools.ml_intermediate.ex2 import *
 print("Setup Complete")
 
+#today I'm in camping and I need make a commit
+# Here is my commit
+
+name = rafael
+print(name)
+
 
 
 

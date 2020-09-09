@@ -132,6 +132,17 @@ num_cols_with_missing = 3
 # all of the training data?
 tot_missing = 212 + 6 + 58
 
+# Part B
+# Considering your answers above, what do you think is likely the best approach 
+# to dealing with the missing values?
+
+
+
+
+
+
+
+
 
 
 

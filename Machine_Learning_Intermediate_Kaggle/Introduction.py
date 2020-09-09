@@ -136,6 +136,16 @@ tot_missing = 212 + 6 + 58
 # Considering your answers above, what do you think is likely the best approach 
 # to dealing with the missing values?
 
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_absolute_error
+
+# Function for comparing different approaches
+def score_dataset(X_train, X_valid, y_train, y_valid):
+    model = RandomForestRegressor(n_estimators=100, random_state=0)
+    model.fit(X_train, y_train)
+    preds = model.predict(X_valid)
+    return mean_absolute_error(y_valid, preds)
+
 
 
 

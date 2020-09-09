@@ -122,7 +122,7 @@ name = rafael
 print(name)
 
 # Fill in the line below: How many rows are in the training data?
-num_rows = ____
+num_rows = 1168
 
 # Fill in the line below: How many columns in the training data
 # have missing values?
@@ -131,9 +131,6 @@ num_cols_with_missing = ____
 # Fill in the line below: How many missing entries are contained in 
 # all of the training data?
 tot_missing = ____
-
-# Check your answers
-step_1.a.check()
 
 
 

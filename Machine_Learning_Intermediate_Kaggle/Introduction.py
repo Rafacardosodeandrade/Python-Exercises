@@ -155,6 +155,16 @@ def score_dataset(X_train, X_valid, y_train, y_valid):
 # Exercise A
 
 
+____ # Your code here
+
+# Fill in the lines below: drop columns in training and validation data
+reduced_X_train = ____
+reduced_X_valid = ____
+
+# Check your answers
+step_2.check()
+
+
 
 
 

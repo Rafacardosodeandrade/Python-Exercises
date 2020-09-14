@@ -147,6 +147,19 @@ def score_dataset(X_train, X_valid, y_train, y_valid):
     return mean_absolute_error(y_valid, preds)
 
 
+# Step 2: Drop columns with missing values
+# In this step, you'll preprocess the data in X_train and X_valid to remove 
+# columns with missing values. Set the preprocessed DataFrames to reduced_X_train 
+# and reduced_X_valid, respectively.
+
+
+
+
+
+
+
+
+
 
 
 

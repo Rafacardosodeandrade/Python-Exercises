@@ -152,6 +152,8 @@ def score_dataset(X_train, X_valid, y_train, y_valid):
 # columns with missing values. Set the preprocessed DataFrames to reduced_X_train 
 # and reduced_X_valid, respectively.
 
+# Exercise A
+
 
 
 

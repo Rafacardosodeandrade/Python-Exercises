@@ -173,7 +173,13 @@ reduced_X_train = X_train.drop(cols_with_missing, axis=1)
 reduced_X_valid = X_valid.drop(cols_with_missing, axis=1)
 
 #test new setup
-print ("rafa")
+print ("rafaRafaafaafaf")
+
+
+
+
+
+hgdaauash
 
 
 

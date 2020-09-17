@@ -129,6 +129,8 @@ local=Zoologico
 dia=sexta-feira
 print(pai+mae+filha+" foram ao "+local+" na "+dia)
 
+print("ja era")
+
 
 
 

@@ -126,7 +126,7 @@ pai=Rafael
 mae=Francielle
 filha=Lorena
 local=Zoologico
-
+dia=sexta-feira
 
 
 

@@ -121,6 +121,10 @@ print("Setup Complete")
 name = rafael
 print(name)
 
+####
+pai=Rafael
+
+
 # Fill in the line below: How many rows are in the training data?
 num_rows = 1168
 
